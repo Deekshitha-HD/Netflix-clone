@@ -1,0 +1,198 @@
+.navbar, body, .navigation a, .content p, .btn {
+  font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Ubuntu', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 0 20px;
+  height: 68px;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0 40px;
+}
+
+.navigation li {
+  padding: 0 15px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 68px;
+}
+
+.navigation a:hover {
+  color: #e5e5e5;
+}
+
+.left-nav{
+  display: flex;
+  align-items: center;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.right-nav a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.notification-count {
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 12px;
+  z-index: 3;
+}
+
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.icon-search, .icon-bell, .icon-speaker {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-bell {
+  position: relative;
+}
+
+.icon-bell svg {
+  fill: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  background-color: #141414;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 5px 0;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.separator {
+  border-top: 1px solid white;
+}
+
+.profile:hover .dropdown-menu {
+  display: block;
+}
+
+
+.logo {
+  height: 130px; 
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* Place the background video behind the content */
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.content { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  text-align: left;
+  width: 100%;
+  padding-left: 150px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 40px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.play {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.more-info {
+  background-color: grey;
+  color: white;
+}
+
+.btn svg {
+  fill: currentColor;
+}
+
+.title-img {
+  width: 500px;
+  height: auto;
+}
+
+.content p {
+  width: 40%;
+  text-align: left;
+  font-size: 20px;
+}
